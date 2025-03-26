@@ -10,7 +10,9 @@ int main() {
     // Variáveis para guardar os atributos das cidades:
     int
         pontosTuristicos1,
-        pontosTuristicos2;
+        pontosTuristicos2,
+        pontuacaoPrimeiraCidade = 0,
+        pontuacaoSegundaCidade = 0;
 
     float
         area1,
