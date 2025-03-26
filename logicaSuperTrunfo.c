@@ -98,23 +98,64 @@ int main() {
     printf("Pontos Turísticos: %d \n", pontosTuristicos2);
     printf("\n");
 
-    // Comparação de Cartas:
-    // Desenvolva a lógica de comparação entre duas cartas.
-    // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
+    // Comparação de Cartas
 
-    // Exemplo:
-    // if (populacaoA > populacaoB) {
-    //     printf("Cidade 1 tem maior população.\n");
-    // } else {
-    //     printf("Cidade 2 tem maior população.\n");
-    // }
+    if (populacao1 > populacao2) {
+        pontuacaoPrimeiraCidade++;
+        printf("Cidade 1 tem maior população.\n");
+    } else {
+        pontuacaoSegundaCidade++;
+        printf("Cidade 2 tem maior população.\n");
+    }
+
+    if (area1 > area2) {
+        pontuacaoPrimeiraCidade++;
+        printf("Cidade 1 tem maior área.\n");
+    } else {
+        pontuacaoSegundaCidade++;
+        printf("Cidade 2 tem maior área.\n");
+    }
+
+    if (densidadePopulacional1 > densidadePopulacional2) {
+        pontuacaoPrimeiraCidade++;
+        printf("Cidade 1 tem maior densidade populacional.\n");
+    } else {
+        pontuacaoSegundaCidade++;
+        printf("Cidade 2 tem maior densidade populacional.\n");
+    }
+
+    if (pib1 > pib2) {
+        pontuacaoPrimeiraCidade++;
+        printf("Cidade 1 tem maior PIB.\n");
+    } else {
+        pontuacaoSegundaCidade++;
+        printf("Cidade 2 tem maior PIB.\n");
+    }
+
+    if (pibPerCapita1 > pibPerCapita2) {
+        pontuacaoPrimeiraCidade++;
+        printf("Cidade 1 tem maior PIB per Capita.\n");
+    } else {
+        pontuacaoSegundaCidade++;
+        printf("Cidade 2 tem maior PIB per Capita.\n");
+    }
+
+    if (pontosTuristicos1 > pontosTuristicos2) {
+        pontuacaoPrimeiraCidade++;
+        printf("Cidade 1 tem mais pontos turísticos.\n");
+    } else {
+        pontuacaoSegundaCidade++;
+        printf("Cidade 2 tem mais pontos turísticos.\n");
+    }
 
     // Exibição dos Resultados:
-    // Após realizar as comparações, exiba os resultados para o usuário.
-    // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
-
-    // Exemplo:
-    // printf("A cidade vencedora é: %s\n", cidadeVencedora);
+    if (pontuacaoPrimeiraCidade > pontuacaoSegundaCidade) {
+        printf("A cidade vencedora é a 1ª cidade com %d pontos.\n", pontuacaoPrimeiraCidade);
+    } else if (pontuacaoSegundaCidade > pontuacaoPrimeiraCidade) {
+        printf("A cidade vencedora é a 2ª cidade com %d pontos.\n", pontuacaoSegundaCidade);
+    } else {
+        printf("Empate! Ambas as cidades possuem a mesma pontuação.\n");
+    }
 
     return 0;
 }
